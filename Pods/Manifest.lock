@@ -1,0 +1,38 @@
+PODS:
+  - AWSAPIGateway (2.6.12):
+    - AWSCore (= 2.6.12)
+  - AWSCore (2.6.12)
+  - Bond (6.6.0):
+    - Differ (~> 1.0)
+    - ReactiveKit (~> 3.8)
+  - CardIO (5.4.1)
+  - Differ (1.0.3)
+  - MapKitGoogleStyler (0.1.1)
+  - MaterialComponents/Ink (46.1.0):
+    - MaterialComponents/private/Math
+  - MaterialComponents/private/Math (46.1.0)
+  - MBCircularProgressBar (0.3.5)
+  - ReactiveKit (3.8.2)
+
+DEPENDENCIES:
+  - AWSAPIGateway (~> 2.6.12)
+  - Bond
+  - CardIO
+  - MapKitGoogleStyler
+  - MaterialComponents/Ink
+  - MBCircularProgressBar
+
+SPEC CHECKSUMS:
+  AWSAPIGateway: 37cd3be749412922be0d61976cf7aab4ec8f97ff
+  AWSCore: d0d6e4f6831754aaf98058d2306a016ae71510fe
+  Bond: 181d6ff061f17fe87a84b12d6f0c4d76d5456ce4
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  Differ: 0c220ac75542f5f17f91b1303b85bf07d871ecd7
+  MapKitGoogleStyler: 8efdceb664fc1748a62a9e3b50a34b67a34247bc
+  MaterialComponents: f14582653f35407ff1aef50e705a15c1b0d0b70c
+  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
+  ReactiveKit: d2fe54503e0b6d0fa48b2cc6e0b0f99869f13ee6
+
+PODFILE CHECKSUM: edb2d91b71b1970a55d941aeecadd7796c3b892a
+
+COCOAPODS: 1.4.0

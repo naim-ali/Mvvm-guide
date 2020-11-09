@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RCW-AM-h97">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_blk.otf">
+            <string>BrandonGrotesque-Black</string>
+        </array>
+        <array key="FrutigerLTCom-Italic.ttf">
+            <string>FrutigerLTCom-Italic</string>
+        </array>
+        <array key="FrutigerLTCom-Roman.ttf">
+            <string>FrutigerLTCom-Roman</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="VFo-C7-97Z">
+            <objects>
+                <viewController storyboardIdentifier="home" id="RCW-AM-h97" customClass="HomeViewController" customModule="KrispyKreme" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b80-ea-iSX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_home_ex" translatesAutoresizingMaskIntoConstraints="NO" id="cRd-XO-Npf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="328"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ND-x4-mMD" userLabel="Feed Container">
+                                <rect key="frame" x="0.0" y="328" width="375" height="209"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Xe-cw-W7e">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOP NEAR ME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Web-Gs-1Po">
+                                                <rect key="frame" x="72" y="17" width="212" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="nFx-60-6Nf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="finding shops near you..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUf-Te-6V7">
+                                                <rect key="frame" x="72" y="41" width="212" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="JNU-ZC-iEk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="FrutigerLTCom-Roman" family="Frutiger LT Com" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="100" verticalCompressionResistancePriority="250" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rla-Bi-AjL">
+                                                <rect key="frame" x="72" y="62" width="202" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="lq9-EK-2VG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="FrutigerLTCom-Italic" family="Frutiger LT Com" pointSize="15"/>
+                                                <color key="textColor" red="0.76470588240000004" green="0.01176470588" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="100" verticalCompressionResistancePriority="250" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8T-A6-co6">
+                                                <rect key="frame" x="72" y="83" width="0.0" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="kr6-cd-lYj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="FrutigerLTCom-Italic" family="Frutiger LT Com" pointSize="15"/>
+                                                <color key="textColor" red="0.76470588240000004" green="0.01176470588" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="White Shop Location Icon" translatesAutoresizingMaskIntoConstraints="NO" id="4Yg-bP-QGn">
+                                                <rect key="frame" x="0.0" y="16" width="72" height="72"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="72" id="BeL-1K-7XW"/>
+                                                    <constraint firstAttribute="height" constant="72" id="SUl-J4-kuW"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hotlight" translatesAutoresizingMaskIntoConstraints="NO" id="8cV-zY-Bbh">
+                                                <rect key="frame" x="284" y="15" width="75" height="95"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="FXm-xw-ePy"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.76470588240000004" green="0.01176470588" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="4Yg-bP-QGn" firstAttribute="leading" secondItem="9Xe-cw-W7e" secondAttribute="leading" id="22a-2L-mDT"/>
+                                            <constraint firstItem="8cV-zY-Bbh" firstAttribute="top" secondItem="9Xe-cw-W7e" secondAttribute="top" constant="15" id="4Tc-Ge-Fxn"/>
+                                            <constraint firstItem="4Yg-bP-QGn" firstAttribute="top" secondItem="9Xe-cw-W7e" secondAttribute="top" constant="16" id="5KI-Hh-rm4"/>
+                                            <constraint firstItem="Web-Gs-1Po" firstAttribute="top" secondItem="9Xe-cw-W7e" secondAttribute="top" constant="17" id="5QJ-Il-ciz"/>
+                                            <constraint firstItem="rla-Bi-AjL" firstAttribute="leading" secondItem="4Yg-bP-QGn" secondAttribute="trailing" id="7Oo-Ot-hnf"/>
+                                            <constraint firstAttribute="trailing" secondItem="8cV-zY-Bbh" secondAttribute="trailing" constant="16" id="9BY-VW-VHK"/>
+                                            <constraint firstItem="rla-Bi-AjL" firstAttribute="top" secondItem="IUf-Te-6V7" secondAttribute="bottom" id="BXJ-w0-Vdw"/>
+                                            <constraint firstItem="8cV-zY-Bbh" firstAttribute="leading" secondItem="rla-Bi-AjL" secondAttribute="trailing" constant="10" id="GRd-H4-8bX"/>
+                                            <constraint firstItem="8cV-zY-Bbh" firstAttribute="leading" secondItem="IUf-Te-6V7" secondAttribute="trailing" id="PcW-yG-6qr"/>
+                                            <constraint firstItem="IUf-Te-6V7" firstAttribute="top" secondItem="Web-Gs-1Po" secondAttribute="bottom" id="Sja-sg-crs"/>
+                                            <constraint firstItem="Web-Gs-1Po" firstAttribute="leading" secondItem="4Yg-bP-QGn" secondAttribute="trailing" id="T03-NL-MBR"/>
+                                            <constraint firstItem="8cV-zY-Bbh" firstAttribute="leading" secondItem="Web-Gs-1Po" secondAttribute="trailing" id="fGz-kg-Bwi"/>
+                                            <constraint firstItem="u8T-A6-co6" firstAttribute="top" secondItem="rla-Bi-AjL" secondAttribute="bottom" id="hUc-eK-dKg"/>
+                                            <constraint firstItem="IUf-Te-6V7" firstAttribute="leading" secondItem="4Yg-bP-QGn" secondAttribute="trailing" id="pzd-SO-5L0"/>
+                                            <constraint firstAttribute="height" constant="125" id="uaI-sk-cat"/>
+                                            <constraint firstItem="u8T-A6-co6" firstAttribute="leading" secondItem="4Yg-bP-QGn" secondAttribute="trailing" id="vkn-6p-Xdz"/>
+                                            <constraint firstAttribute="bottom" secondItem="8cV-zY-Bbh" secondAttribute="bottom" constant="15" id="yKd-dg-mkg"/>
+                                        </constraints>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMb-gQ-PX4" customClass="SeparatorView" customModule="KrispyKreme" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="125" width="327" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="dlp-mr-0Q7"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y8W-zt-4mJ" userLabel="Reward Row">
+                                        <rect key="frame" x="0.0" y="126" width="375" height="104"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REWARDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXI-8f-sct">
+                                                <rect key="frame" x="71" y="29" width="292" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="qiC-DQ-D8m"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="18"/>
+                                                <color key="textColor" red="0.043137254899999998" green="0.41176470590000003" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rewards Image" translatesAutoresizingMaskIntoConstraints="NO" id="IYE-Dd-g1i">
+                                                <rect key="frame" x="0.0" y="16" width="71" height="71"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="71" id="17K-XA-xUK"/>
+                                                    <constraint firstAttribute="height" constant="71" id="SRx-CE-NuH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jjD-Ru-j80" customClass="TextView" customModule="KrispyKreme" customModuleProvider="target">
+                                                <rect key="frame" x="71" y="53" width="291" height="51"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="FrutigerLTCom-Roman" family="Frutiger LT Com" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="jjD-Ru-j80" firstAttribute="top" secondItem="eXI-8f-sct" secondAttribute="bottom" id="8cd-R3-vpr"/>
+                                            <constraint firstItem="eXI-8f-sct" firstAttribute="leading" secondItem="IYE-Dd-g1i" secondAttribute="trailing" id="9YR-AN-lCd"/>
+                                            <constraint firstAttribute="bottom" secondItem="jjD-Ru-j80" secondAttribute="bottom" id="EcM-Nc-XrA"/>
+                                            <constraint firstItem="IYE-Dd-g1i" firstAttribute="top" secondItem="Y8W-zt-4mJ" secondAttribute="top" constant="16" id="HVL-NW-7ed"/>
+                                            <constraint firstItem="eXI-8f-sct" firstAttribute="top" secondItem="Y8W-zt-4mJ" secondAttribute="top" constant="29" id="NmS-6G-lhY"/>
+                                            <constraint firstAttribute="height" constant="104" id="ZtC-et-Ang"/>
+                                            <constraint firstAttribute="trailing" secondItem="eXI-8f-sct" secondAttribute="trailing" constant="12" id="j62-4v-C78"/>
+                                            <constraint firstAttribute="trailing" secondItem="jjD-Ru-j80" secondAttribute="trailing" constant="13" id="uKR-dQ-lwx"/>
+                                            <constraint firstItem="IYE-Dd-g1i" firstAttribute="leading" secondItem="Y8W-zt-4mJ" secondAttribute="leading" id="vzV-av-8f2"/>
+                                            <constraint firstItem="jjD-Ru-j80" firstAttribute="leading" secondItem="IYE-Dd-g1i" secondAttribute="trailing" id="ykB-zT-eKO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Y8W-zt-4mJ" firstAttribute="top" secondItem="QMb-gQ-PX4" secondAttribute="bottom" id="2aA-R4-b0B"/>
+                                    <constraint firstItem="QMb-gQ-PX4" firstAttribute="leading" secondItem="2ND-x4-mMD" secondAttribute="leading" constant="24" id="Ag4-Cq-aAW"/>
+                                    <constraint firstItem="9Xe-cw-W7e" firstAttribute="top" secondItem="2ND-x4-mMD" secondAttribute="top" id="RsN-HL-SEW"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y8W-zt-4mJ" secondAttribute="trailing" id="S02-7A-Q0L"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Xe-cw-W7e" secondAttribute="trailing" id="TtS-7J-FC7"/>
+                                    <constraint firstAttribute="trailing" secondItem="QMb-gQ-PX4" secondAttribute="trailing" constant="24" id="caZ-6f-aK5"/>
+                                    <constraint firstItem="9Xe-cw-W7e" firstAttribute="leading" secondItem="2ND-x4-mMD" secondAttribute="leading" id="dhc-RX-g5R"/>
+                                    <constraint firstAttribute="height" constant="209" id="eeR-6j-a3M"/>
+                                    <constraint firstItem="QMb-gQ-PX4" firstAttribute="top" secondItem="9Xe-cw-W7e" secondAttribute="bottom" id="pSA-Y6-MH2"/>
+                                    <constraint firstItem="Y8W-zt-4mJ" firstAttribute="leading" secondItem="2ND-x4-mMD" secondAttribute="leading" id="pc6-AK-v1g"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2ND-x4-mMD" secondAttribute="bottom" constant="130" id="1Fx-X3-iSb"/>
+                            <constraint firstItem="VGn-dP-W6O" firstAttribute="leading" secondItem="2ND-x4-mMD" secondAttribute="leading" id="Uge-iC-2zf"/>
+                            <constraint firstItem="cRd-XO-Npf" firstAttribute="trailing" secondItem="VGn-dP-W6O" secondAttribute="trailing" id="dE5-7n-I3o"/>
+                            <constraint firstItem="cRd-XO-Npf" firstAttribute="leading" secondItem="VGn-dP-W6O" secondAttribute="leading" id="dk4-W3-TtB"/>
+                            <constraint firstItem="2ND-x4-mMD" firstAttribute="trailing" secondItem="VGn-dP-W6O" secondAttribute="trailing" id="gQm-PD-xDA"/>
+                            <constraint firstItem="cRd-XO-Npf" firstAttribute="bottom" secondItem="2ND-x4-mMD" secondAttribute="top" id="ijE-oV-3Hh"/>
+                            <constraint firstAttribute="top" secondItem="cRd-XO-Npf" secondAttribute="top" id="yya-bx-GGE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VGn-dP-W6O"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jpI-3O-wvr"/>
+                    <connections>
+                        <outlet property="driveThruLabel" destination="u8T-A6-co6" id="Kyr-9t-WMj"/>
+                        <outlet property="driveThruLabelHeight" destination="kr6-cd-lYj" id="CPN-f6-MiT"/>
+                        <outlet property="feedContainerHeight" destination="eeR-6j-a3M" id="0sD-GR-ohU"/>
+                        <outlet property="locationLabel" destination="IUf-Te-6V7" id="E79-tE-bs1"/>
+                        <outlet property="myShopImage" destination="4Yg-bP-QGn" id="ecM-JX-bcr"/>
+                        <outlet property="myShopLabelTopConstraint" destination="5QJ-Il-ciz" id="IwX-8P-xd3"/>
+                        <outlet property="myShopRow" destination="9Xe-cw-W7e" id="Nmx-1w-ijY"/>
+                        <outlet property="myShopRowHeight" destination="uaI-sk-cat" id="jcU-zb-49Z"/>
+                        <outlet property="myshopLabel" destination="Web-Gs-1Po" id="3Vh-QD-GbP"/>
+                        <outlet property="openLabel" destination="rla-Bi-AjL" id="afb-Eq-EJR"/>
+                        <outlet property="promotionImageView" destination="cRd-XO-Npf" id="Sn4-YV-NKi"/>
+                        <outlet property="rewardRow" destination="Y8W-zt-4mJ" id="ou7-NO-849"/>
+                        <outlet property="rewardRowHeight" destination="ZtC-et-Ang" id="078-QL-LpG"/>
+                        <outlet property="rewardsLabel" destination="eXI-8f-sct" id="778-h1-EBN"/>
+                        <outlet property="rewardsTextView" destination="jjD-Ru-j80" id="Xav-C0-no8"/>
+                        <outlet property="separatorViewHeight" destination="dlp-mr-0Q7" id="ttU-9W-EFe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DRc-3K-sRv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1436" y="-90"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hotlight" width="73" height="73"/>
+        <image name="Rewards Image" width="72" height="72"/>
+        <image name="White Shop Location Icon" width="72" height="72"/>
+        <image name="bg_home_ex" width="320" height="339"/>
+    </resources>
+</document>

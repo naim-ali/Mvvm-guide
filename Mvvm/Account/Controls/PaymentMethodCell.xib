@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_blk.otf">
+            <string>BrandonGrotesque-Black</string>
+        </array>
+        <array key="FrutigerLTCom-Roman.ttf">
+            <string>FrutigerLTCom-Roman</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="PaymentMethodCell" customModule="KrispyKreme" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="456" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="456" height="83.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="frL-vw-cL2">
+                        <rect key="frame" x="416" y="31" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="LjP-TV-DRe"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Amex Icon" translatesAutoresizingMaskIntoConstraints="NO" id="RW0-0d-M5n">
+                        <rect key="frame" x="20" y="30" width="36" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="5y3-IB-MHW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKB-n1-mYj">
+                        <rect key="frame" x="64" y="27" width="223" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="223" id="OBg-ui-FTz"/>
+                            <constraint firstAttribute="height" constant="21" id="o9y-y3-9E0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="13"/>
+                        <color key="textColor" red="0.16862745098039217" green="0.50712435229999997" blue="0.1400996699" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68U-GO-bl8">
+                        <rect key="frame" x="64" y="47" width="107" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="107" id="4Qi-nl-nuZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FrutigerLTCom-Roman" family="Frutiger LT Com" pointSize="14"/>
+                        <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRIMARY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEc-kx-gAy">
+                        <rect key="frame" x="349" y="31" width="77" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="77" id="zSZ-DP-OJi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="13"/>
+                        <color key="textColor" red="0.78823529411764703" green="0.12156862745098039" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KK CARD BALANCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhB-Yd-Fu7">
+                        <rect key="frame" x="64" y="30" width="223" height="26"/>
+                        <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="17"/>
+                        <color key="textColor" red="0.16862745098039217" green="0.50588235294117645" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SKB-n1-mYj" firstAttribute="leading" secondItem="RW0-0d-M5n" secondAttribute="trailing" constant="8" id="4Sl-wc-0f3"/>
+                    <constraint firstItem="EhB-Yd-Fu7" firstAttribute="leading" secondItem="SKB-n1-mYj" secondAttribute="leading" id="4Yk-df-bhe"/>
+                    <constraint firstItem="RW0-0d-M5n" firstAttribute="top" secondItem="SKB-n1-mYj" secondAttribute="top" constant="3" id="6Lh-gY-EYv"/>
+                    <constraint firstItem="LEc-kx-gAy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="6aR-5B-JqG"/>
+                    <constraint firstItem="RW0-0d-M5n" firstAttribute="bottom" secondItem="68U-GO-bl8" secondAttribute="bottom" constant="-12" id="FUP-s0-rjN"/>
+                    <constraint firstItem="SKB-n1-mYj" firstAttribute="leading" secondItem="68U-GO-bl8" secondAttribute="leading" id="XfA-Li-XGm"/>
+                    <constraint firstItem="frL-vw-cL2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="YSW-Hi-Y8S"/>
+                    <constraint firstItem="EhB-Yd-Fu7" firstAttribute="trailing" secondItem="SKB-n1-mYj" secondAttribute="trailing" id="ddw-Tn-sLC"/>
+                    <constraint firstItem="RW0-0d-M5n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="19" id="fsk-5J-2nH"/>
+                    <constraint firstItem="frL-vw-cL2" firstAttribute="leading" secondItem="LEc-kx-gAy" secondAttribute="trailing" constant="-10" id="hg9-wR-Jw1"/>
+                    <constraint firstItem="68U-GO-bl8" firstAttribute="top" secondItem="SKB-n1-mYj" secondAttribute="bottom" constant="-1" id="iSK-t2-9tA"/>
+                    <constraint firstItem="LEc-kx-gAy" firstAttribute="centerY" secondItem="frL-vw-cL2" secondAttribute="centerY" id="kEl-bx-QCS"/>
+                    <constraint firstItem="EhB-Yd-Fu7" firstAttribute="bottom" secondItem="RW0-0d-M5n" secondAttribute="bottom" id="oQG-go-lSS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="RW0-0d-M5n" secondAttribute="bottom" constant="17" id="oT5-Dq-hOd"/>
+                    <constraint firstItem="RW0-0d-M5n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="otI-ci-BeD"/>
+                    <constraint firstItem="frL-vw-cL2" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="uAo-tH-4Hg"/>
+                    <constraint firstItem="RW0-0d-M5n" firstAttribute="centerY" secondItem="LEc-kx-gAy" secondAttribute="centerY" constant="2" id="wet-iQ-dG3"/>
+                    <constraint firstItem="EhB-Yd-Fu7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="19" id="yNU-Ys-wIr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="balance" destination="EhB-Yd-Fu7" id="Gid-W6-Kjf"/>
+                <outlet property="cardImageView" destination="RW0-0d-M5n" id="F2Z-mK-Bck"/>
+                <outlet property="cardType" destination="68U-GO-bl8" id="OeP-YP-WeU"/>
+                <outlet property="lastFour" destination="SKB-n1-mYj" id="bqD-dt-fKX"/>
+                <outlet property="primary" destination="LEc-kx-gAy" id="Kkp-Te-ros"/>
+            </connections>
+            <point key="canvasLocation" x="78" y="74"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Amex Icon" width="36" height="26"/>
+        <image name="ic_arrow" width="16" height="16"/>
+    </resources>
+</document>

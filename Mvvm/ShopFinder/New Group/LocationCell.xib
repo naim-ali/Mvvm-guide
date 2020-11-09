@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_blk.otf">
+            <string>BrandonGrotesque-Black</string>
+        </array>
+        <array key="FrutigerLTCom-Bold.ttf">
+            <string>FrutigerLTCom-Bold</string>
+        </array>
+        <array key="FrutigerLTCom-Italic.ttf">
+            <string>FrutigerLTCom-Italic</string>
+        </array>
+        <array key="FrutigerLTCom-Roman.ttf">
+            <string>FrutigerLTCom-Roman</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell multipleTouchEnabled="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="KGk-i7-Jjw" customClass="LocationCell" customModule="KrispyKreme" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syD-sJ-q96">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="149.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eES-Np-Y7D">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="26"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAVORITE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sI-iP-Cef">
+                                        <rect key="frame" x="16" y="4" width="61" height="19"/>
+                                        <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="13"/>
+                                        <color key="textColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYw-r4-6gI" customClass="SeparatorView" customModule="KrispyKreme" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="25" width="320" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="euZ-S3-sV6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pYw-r4-6gI" secondAttribute="trailing" id="617-sG-6o2"/>
+                                    <constraint firstAttribute="height" constant="26" id="ALc-Ee-GbO"/>
+                                    <constraint firstItem="1sI-iP-Cef" firstAttribute="leading" secondItem="eES-Np-Y7D" secondAttribute="leading" constant="16" id="Lr1-xC-V1t"/>
+                                    <constraint firstItem="1sI-iP-Cef" firstAttribute="top" secondItem="eES-Np-Y7D" secondAttribute="top" constant="4" id="Mx0-V8-lj5"/>
+                                    <constraint firstAttribute="bottom" secondItem="pYw-r4-6gI" secondAttribute="bottom" id="amM-7U-IWK"/>
+                                    <constraint firstItem="pYw-r4-6gI" firstAttribute="top" secondItem="1sI-iP-Cef" secondAttribute="bottom" constant="2" id="mgG-4g-fvp"/>
+                                    <constraint firstItem="pYw-r4-6gI" firstAttribute="leading" secondItem="eES-Np-Y7D" secondAttribute="leading" id="vKn-FM-WWK"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winston Salem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahe-vX-owP">
+                                <rect key="frame" x="16" y="39" width="184" height="16"/>
+                                <fontDescription key="fontDescription" name="FrutigerLTCom-Bold" family="Frutiger LT Com" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.58823529409999997" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open until 10 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="al9-Wk-Mn7">
+                                <rect key="frame" x="16" y="105.5" width="106.5" height="13"/>
+                                <fontDescription key="fontDescription" name="FrutigerLTCom-Bold" family="Frutiger LT Com" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drive-Thru: Open" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="con-Zj-Dun">
+                                <rect key="frame" x="16" y="121.5" width="97" height="12"/>
+                                <fontDescription key="fontDescription" name="FrutigerLTCom-Italic" family="Frutiger LT Com" pointSize="12"/>
+                                <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Street address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fS-Be-yZ0">
+                                <rect key="frame" x="16" y="55" width="79" height="12"/>
+                                <fontDescription key="fontDescription" name="FrutigerLTCom-Roman" family="Frutiger LT Com" pointSize="12"/>
+                                <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="City, st, 12345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Kh-Eh-qsd">
+                                <rect key="frame" x="16" y="67" width="77" height="12"/>
+                                <fontDescription key="fontDescription" name="FrutigerLTCom-Roman" family="Frutiger LT Com" pointSize="12"/>
+                                <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.6 Miles" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bng-6O-UMg">
+                                <rect key="frame" x="229.5" y="121" width="54.5" height="13"/>
+                                <fontDescription key="fontDescription" name="FrutigerLTCom-Bold" family="Frutiger LT Com" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TI-X8-ahe">
+                                <rect key="frame" x="200" y="39" width="60" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="SGp-BG-wMs"/>
+                                </constraints>
+                                <state key="normal" title="Hot Light" image="ic_coldlight"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mh-U0-YWg">
+                                <rect key="frame" x="260" y="39" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="AuQ-XR-AcB"/>
+                                    <constraint firstAttribute="height" constant="40" id="TJh-1e-Q1q"/>
+                                </constraints>
+                                <state key="normal" image="ic_heart_empty"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujw-G7-sbn" customClass="SeparatorView" customModule="KrispyKreme" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="149.5" width="320" height="2"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="vbU-Tg-SxE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="con-Zj-Dun" firstAttribute="centerY" secondItem="Bng-6O-UMg" secondAttribute="centerY" id="0es-cm-hoE"/>
+                            <constraint firstItem="con-Zj-Dun" firstAttribute="leading" secondItem="al9-Wk-Mn7" secondAttribute="leading" id="5wo-Gv-09a"/>
+                            <constraint firstItem="6fS-Be-yZ0" firstAttribute="top" secondItem="ahe-vX-owP" secondAttribute="bottom" id="6YB-0h-W6F"/>
+                            <constraint firstAttribute="trailing" secondItem="5mh-U0-YWg" secondAttribute="trailing" constant="20" id="8TX-mG-vBE"/>
+                            <constraint firstItem="eES-Np-Y7D" firstAttribute="top" secondItem="syD-sJ-q96" secondAttribute="top" id="9pB-Fv-Hvd"/>
+                            <constraint firstItem="ahe-vX-owP" firstAttribute="leading" secondItem="syD-sJ-q96" secondAttribute="leading" constant="16" id="Dug-4o-3Xt"/>
+                            <constraint firstItem="al9-Wk-Mn7" firstAttribute="bottom" secondItem="con-Zj-Dun" secondAttribute="top" constant="-3" id="EBY-tx-hC5"/>
+                            <constraint firstItem="5mh-U0-YWg" firstAttribute="top" secondItem="9TI-X8-ahe" secondAttribute="top" id="GLv-7P-pgL"/>
+                            <constraint firstItem="ahe-vX-owP" firstAttribute="leading" secondItem="al9-Wk-Mn7" secondAttribute="leading" id="R09-mz-yD8"/>
+                            <constraint firstAttribute="bottom" secondItem="con-Zj-Dun" secondAttribute="bottom" constant="16" id="SXR-Wn-vh5"/>
+                            <constraint firstItem="5mh-U0-YWg" firstAttribute="leading" secondItem="9TI-X8-ahe" secondAttribute="trailing" id="UWE-uT-pTM"/>
+                            <constraint firstItem="6Kh-Eh-qsd" firstAttribute="top" secondItem="6fS-Be-yZ0" secondAttribute="bottom" id="b6x-wB-hWj"/>
+                            <constraint firstAttribute="bottom" secondItem="ujw-G7-sbn" secondAttribute="bottom" constant="-2" id="bBc-qd-7he"/>
+                            <constraint firstItem="Bng-6O-UMg" firstAttribute="trailing" secondItem="5mh-U0-YWg" secondAttribute="trailing" constant="-16" id="exv-rl-P84"/>
+                            <constraint firstAttribute="trailing" secondItem="ujw-G7-sbn" secondAttribute="trailing" id="gSY-KJ-KuG"/>
+                            <constraint firstAttribute="trailing" secondItem="eES-Np-Y7D" secondAttribute="trailing" id="jVO-p4-X6D"/>
+                            <constraint firstItem="al9-Wk-Mn7" firstAttribute="leading" secondItem="6fS-Be-yZ0" secondAttribute="leading" id="kp7-UD-P9w"/>
+                            <constraint firstItem="6fS-Be-yZ0" firstAttribute="leading" secondItem="6Kh-Eh-qsd" secondAttribute="leading" id="nVm-IX-4hb"/>
+                            <constraint firstItem="9TI-X8-ahe" firstAttribute="top" secondItem="ahe-vX-owP" secondAttribute="top" id="oWW-Im-mFl"/>
+                            <constraint firstItem="Bng-6O-UMg" firstAttribute="top" secondItem="9TI-X8-ahe" secondAttribute="bottom" constant="18" id="qAO-mc-ccz"/>
+                            <constraint firstItem="ujw-G7-sbn" firstAttribute="leading" secondItem="syD-sJ-q96" secondAttribute="leading" id="rUu-DS-lYF"/>
+                            <constraint firstItem="eES-Np-Y7D" firstAttribute="leading" secondItem="syD-sJ-q96" secondAttribute="leading" id="tzc-y3-LBq"/>
+                            <constraint firstItem="9TI-X8-ahe" firstAttribute="leading" secondItem="ahe-vX-owP" secondAttribute="trailing" id="urq-jq-1DZ"/>
+                            <constraint firstItem="ahe-vX-owP" firstAttribute="top" secondItem="eES-Np-Y7D" secondAttribute="bottom" constant="13" id="zDA-gR-R7d"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="syD-sJ-q96" secondAttribute="trailing" id="PFS-Lh-wmv"/>
+                    <constraint firstItem="syD-sJ-q96" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="X8V-ee-xad"/>
+                    <constraint firstAttribute="bottom" secondItem="syD-sJ-q96" secondAttribute="bottom" id="ksy-rg-wKY"/>
+                    <constraint firstItem="syD-sJ-q96" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ygv-1u-jQd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="address" destination="6fS-Be-yZ0" id="jRg-Jb-nqX"/>
+                <outlet property="content" destination="H2p-sc-9uM" id="wkq-Id-qFP"/>
+                <outlet property="distance" destination="Bng-6O-UMg" id="Kxq-2c-fL8"/>
+                <outlet property="driveThruHours" destination="con-Zj-Dun" id="h3N-hc-thu"/>
+                <outlet property="headerLabel" destination="1sI-iP-Cef" id="NJn-kM-Ce3"/>
+                <outlet property="headerView" destination="eES-Np-Y7D" id="Ox1-um-UMr"/>
+                <outlet property="headerViewHeight" destination="ALc-Ee-GbO" id="qJn-U1-wPd"/>
+                <outlet property="hotlight" destination="9TI-X8-ahe" id="0Ma-ac-MEp"/>
+                <outlet property="openHours" destination="al9-Wk-Mn7" id="3tC-AL-pHb"/>
+                <outlet property="province" destination="6Kh-Eh-qsd" id="mc5-Hq-HYh"/>
+                <outlet property="storeName" destination="ahe-vX-owP" id="bd7-fC-Pwl"/>
+                <outlet property="toggleLikeBtn" destination="5mh-U0-YWg" id="g8h-XV-A0Y"/>
+                <outlet property="toggleLikeBtnWidth" destination="AuQ-XR-AcB" id="uPB-Zg-Van"/>
+            </connections>
+            <point key="canvasLocation" x="-38" y="-63"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_coldlight" width="55" height="55"/>
+        <image name="ic_heart_empty" width="40" height="40"/>
+    </resources>
+</document>

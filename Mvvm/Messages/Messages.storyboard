@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="Ce1-09-pAk">
+            <objects>
+                <viewController storyboardIdentifier="messagesController" id="KLK-HX-NJ1" customClass="MessagesViewController" customModule="KrispyKreme" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xRQ-Ku-Yw2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="veD-JW-LrJ">
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ja-Sd-aY5" userLabel="NavigationView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MESSAGES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V72-wO-VSB" customClass="NavigationLabel" customModule="KrispyKreme" customModuleProvider="target">
+                                        <rect key="frame" x="143" y="24.5" width="89" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16862745100000001" green="0.50588235290000005" blue="0.1400996699" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="V72-wO-VSB" firstAttribute="centerY" secondItem="5ja-Sd-aY5" secondAttribute="centerY" id="Lha-To-LUf"/>
+                                    <constraint firstItem="V72-wO-VSB" firstAttribute="centerX" secondItem="5ja-Sd-aY5" secondAttribute="centerX" id="TgO-Xw-dti"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="veD-JW-LrJ" firstAttribute="bottom" secondItem="L9t-IR-dM8" secondAttribute="bottom" id="5xV-Oe-Lfv"/>
+                            <constraint firstItem="5ja-Sd-aY5" firstAttribute="top" secondItem="xRQ-Ku-Yw2" secondAttribute="top" id="9rh-8y-DgM"/>
+                            <constraint firstItem="5ja-Sd-aY5" firstAttribute="trailing" secondItem="veD-JW-LrJ" secondAttribute="trailing" id="MgB-P7-dmW"/>
+                            <constraint firstItem="5ja-Sd-aY5" firstAttribute="leading" secondItem="veD-JW-LrJ" secondAttribute="leading" id="O6S-SB-AJt"/>
+                            <constraint firstAttribute="trailing" secondItem="5ja-Sd-aY5" secondAttribute="trailing" id="Pwr-cG-wcj"/>
+                            <constraint firstItem="5ja-Sd-aY5" firstAttribute="leading" secondItem="xRQ-Ku-Yw2" secondAttribute="leading" id="XnN-4z-WLx"/>
+                            <constraint firstItem="veD-JW-LrJ" firstAttribute="top" secondItem="L9t-IR-dM8" secondAttribute="top" constant="52" id="XpO-WW-doF"/>
+                            <constraint firstItem="L9t-IR-dM8" firstAttribute="bottom" secondItem="5ja-Sd-aY5" secondAttribute="bottom" constant="594" id="oRM-ho-6Y9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="L9t-IR-dM8"/>
+                    </view>
+                    <connections>
+                        <outlet property="navigationBar" destination="5ja-Sd-aY5" id="PPc-aX-8DI"/>
+                        <outlet property="navigationTitle" destination="V72-wO-VSB" id="LBK-cv-IeI"/>
+                        <outlet property="tableView" destination="veD-JW-LrJ" id="VZQ-q8-BzD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dw7-1h-cT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-327.19999999999999" y="12.143928035982009"/>
+        </scene>
+    </scenes>
+</document>
